@@ -11,7 +11,7 @@ Stack
 PHP • SQLite • Vanilla JS • Manual MVC
 
 Setup
-git clone https://github.com/KULLANICI_ADIN/vulnsphere.git
+git clone https://github.com/nxllnv/vulnsphere.git
 cd vulnsphere
 cp .env.example .env
 php setup.php
