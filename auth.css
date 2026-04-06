@@ -1,0 +1,14 @@
+/* auth.css — minimal, main.css handles most styles */
+.auth-bg-wrap {
+  position: fixed; inset: 0; z-index: -1;
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 48px 48px;
+  opacity: 0.18;
+  animation: grid-pan 30s linear infinite;
+}
+@keyframes grid-pan {
+  from { background-position: 0 0; }
+  to   { background-position: 48px 48px; }
+}
