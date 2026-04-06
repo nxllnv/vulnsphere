@@ -1,0 +1,37 @@
+# Git ignore for VulnSphere
+
+# ── Environment / secrets ──
+.env
+.env.local
+.env.production
+
+# ── Database (generated at runtime) ──
+database/*.db
+database/*.db-shm
+database/*.db-wal
+
+# ── User uploads ──
+public/uploads/posts/*
+public/uploads/avatars/*
+!public/uploads/posts/.gitkeep
+!public/uploads/avatars/.gitkeep
+
+# ── OS files ──
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editor files ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── PHP logs ──
+*.log
+error_log
+
+# ── Composer (not used, but just in case) ──
+vendor/
+composer.lock
